@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         const scrollValue = window.scrollY;
-        mountain3.style.transform = `translateY(-${scrollValue * 0.3}px)`; 
+        mountain3.style.transform = `translateY(-${scrollValue * 0.5}px)`; 
+        banner.style.transform = `translateY(-${scrollValue * 0.5}px)`;
     });
 });
