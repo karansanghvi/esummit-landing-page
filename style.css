@@ -11,7 +11,6 @@ body
 {
     min-height: 100vh;
     overflow-x: hidden;
-    /* background: linear-gradient(#2b1055,#7597de); */
     background: linear-gradient(180deg, #0C313A 0%, #165A6A 31.5%, #0E8991 49%, #0E8991 60%, #0C313A 100%);
 }
 header
@@ -28,12 +27,8 @@ header
 }
 header .logo
 {
-    color: #ffff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    width: 68px;
+    height: 68px;
 }
 header ul
 {
@@ -124,12 +119,22 @@ section img#moon
 }
 .sec h2 
 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #fff;
+    font-family: Rounded Mplus 1c;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 143px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: hsla(19, 59%, 78%, 1);
+    padding-left: 180px;
+
 }
 .sec p
 {
-    font-size: 1em;
-    color: #fff;
+    font-family: Rounded Mplus 1c;
+    font-size: 20px;
+    font-weight: 500;
+    color: hsla(188, 59%, 91%, 1);
+    margin-left: 180px;
+    text-align: justify;
 }
