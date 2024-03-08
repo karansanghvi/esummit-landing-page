@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="parallax-container">
-        <img src="./assets/images/SS (4) 1.png" alt="" class="mountain1">
-        <img src="./assets/images/SS (6) 1.png" alt="" class="mountain2">
-        <img src="./assets/images/lots_of_mountains.png" alt="" class="mountain3">
+<html>
+  <head>
+    <title>ESummit 2024</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <section>
+        <img src="stars.png" id="stars" />
+        <img
+          src="./SS (6) 1.png"
+          id="mountains_behind"
+          class="one_mountain"
+        />
+        <img src="./banner.png" alt="" class="rectangle" id="text" />
+        <img
+          src="./lots_of_mountains.png"
+          id="mountains_front"
+          class="big_mountain"
+        />
+      </section>
     </div>
-    <div class="banner">
-        <div class="grid-container">
-            <div>
-                <h1 class="date">4th to 6th April</h1>
-            </div>
-            <div>
-                <h1 class="esummit-text">
-                    E-Summit 24
-                </h1>
-            </div>
-            <div>
-                <h1 class="tagline">The Enigma Of Inception</h1>
-            </div>
-        </div>
+    <div class="sec" id="sec">
+      <h2>Parallax Scrolling Effect Demonstration</h2>
+      <p>
+        <!-- Your content goes here -->
+      </p>
     </div>
+    <script>
+      let stars = document.getElementById("stars");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let text = document.getElementById("text");
+      let mountains_front = document.getElementById("mountains_front");
+      let header = document.querySelector("header");
 
-    <div class="main">
-        <div class="about">
-            <h1 class="about-text">About</h1>
-            <p class="about-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, egestas in est nec, rutrum aliquam mi. Sed sit amet ligula eu arcu fringilla varius. Integer interdum velit fringilla euismod faucibus. Vestibulum sed lacinia justo. Aenean aliquet vitae erat a lacinia. Pellentesque imperdiet luctus purus, eget suscipit tellus faucibus at. Aenean aliquam urna ut enim egestas congue. Sed elementum ultrices est, vel posuere dui semper nec. Vestibulum in dolor pharetra, tincidunt metus at, ornare mi. In vel condimentum urna.
-            </p>
-        </div>
-        <div class="theme">
-            <h1 class="theme-text">Theme</h1>
-            <p class="theme-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu ipsum, egestas in est nec, rutrum aliquam mi. Sed sit amet ligula eu arcu fringilla varius. Integer interdum velit fringilla euismod faucibus. Vestibulum sed lacinia justo. Aenean aliquet vitae erat a lacinia. Pellentesque imperdiet luctus purus, eget suscipit tellus faucibus at. Aenean aliquam urna ut enim egestas congue. Sed elementum ultrices est, vel posuere dui semper nec. Vestibulum in dolor pharetra, tincidunt metus at, ornare mi. In vel condimentum urna.
-            </p>
-        </div>
-        <div>
-            <!-- <img src="./assets/images/SS (12) 1.png" alt="" class="blur-img"> -->
-            <!-- <img src="./assets/images/Rectangle_30-removebg-preview.png" alt="" class="number-img"> -->
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        mountains_behind.style.top = value * 0.5 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.right = value * 4 + "px"; 
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
 </html>

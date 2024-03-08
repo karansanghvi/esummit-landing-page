@@ -1,180 +1,135 @@
-body {
-    background: linear-gradient(180deg, #0C313A 0%, #165A6A 31.5%, #0E8991 49%, #0E8991 60%, #0C313A 100%);
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
-
-.logo {
-    width: 68px;
-    height: 68px;
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* background: linear-gradient(#2b1055,#7597de); */
+    background: linear-gradient(180deg, #0C313A 0%, #165A6A 31.5%, #0E8991 49%, #0E8991 60%, #0C313A 100%);
 }
-
-.mountain1 {
-    margin-top: 150px;
-    object-fit: cover;
-}
-
-.mountain2 {
-    margin-top: -900px;
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 50px;
-}
-
-.mountain3 {
-    object-fit: cover;
-    width: 100%;
-    margin-top: -260px;
-    height: 100%;
-}
-
-.banner {
-    background-image: url('./assets/images/Rectangle\ 1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 700px;
+    padding: 30px 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: -900px;
-    margin-bottom: 20px;
-    transform: translateY(0);
-    transition: top 0.5s ease;
+    z-index: 10000;
 }
-
-.banner .date,
-.banner .tagline {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 400;
+header .logo
+{
+    color: #ffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.banner .date,
-.banner .tagline {
-    font-size: 50px;
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
 }
-
-.banner .date {
-    margin-bottom: -80px;
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
 }
-
-.banner .tagline {
-    margin-top: -100px;
+header ul li a:hover , header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
 }
-
-.banner .esummit-text {
-    font-family: "Lalezar", system-ui;
-    font-weight: 400;
-    font-size: 128px;
-}
-
-.banner .grid-container {
-    display: grid;
-    grid-template-rows: auto auto auto;
-}
-
-.main {
-    background: hsla(191, 76%, 13%, 1);
-    margin-top: 200px;
-}
-
-.main .about .about-text {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 500;
-    font-size: 96px;
-    color: hsla(19, 59%, 78%, 1);
-    margin-top: -60px;
-    padding-top: 80px;
-    margin-left: 210px;
-    margin-bottom: -20px;
-}
-
-.main .about .about-description {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 500;
-    font-size: 22px;
-    color: hsla(188, 59%, 91%, 1);
-    text-align: justify;
-    line-height: 47.52px;
-    margin-left: 210px;
-    margin-left: 210px;
-    padding-right: 210px;
-    padding-top: -100px;
-}
-
-.main .theme .theme-text {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 500;
-    font-size: 96px;
-    color: hsla(19, 59%, 78%, 1);
-    margin-top: -60px;
-    padding-top: 80px;
-    margin-left: 190px;
-    margin-bottom: -20px;
-}
-
-.main .theme .theme-description {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 500;
-    font-size: 22px;
-    color: hsla(188, 59%, 91%, 1);
-    text-align: justify;
-    line-height: 47.52px;
-    margin-left: 210px;
-    margin-left: 210px;
-    padding-right: 210px;
-    padding-top: -100px;
-}
-
-.blur-img {
-    margin-left: 712px;
+section
+{
     position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-
-.number-img {
-    margin-left: 310px;
-    padding-top: -900px;
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#08313a,transparent);
+    z-index: 1000;
 }
+section img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+.two_mountain {
+    margin-top: 100px;
+    margin-left: -200px;
+}
+.one_mountain {
+    margin-top: -80px;
+    object-fit: cover;
+}
+.big_mountain {
+    object-fit: cover;
+    width: 100%;
+    margin-top: 220px;
+    height: 100%;
+}
+.rectangle {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 230px;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #08313a;
 
-@media only screen and (max-width: 768px) {
-    .mountain1 {
-        margin-top: 50px;
-        height: 80px;
-    }
-
-    .mountain2 {
-        margin-top: -400px;
-    }
-
-    .mountain3 {
-        margin-top: -170px;
-        object-fit: cover;
-        margin-left: 120px;
-    }
-
-    .banner {
-        height: 700px;
-        margin-top: -400px;
-        margin-left: 20px;
-        margin-right: -20px;
-    }
-
-    .banner .date,
-    .banner .tagline {
-        font-size: 30px;
-        margin-top: -80px;
-        margin-bottom: -50px;
-    }
-
-    .banner .esummit-text {
-        font-size: 80px;
-    }
-
-    .main {
-        margin-right: -600px;
-
-    }
+}
+.sec h2 
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
 }
