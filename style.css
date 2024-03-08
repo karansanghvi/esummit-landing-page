@@ -188,25 +188,3 @@ section img#moon
     text-align: center;
     font-size: large;
 }
-
-@media only screen and (max-width: 767px) {
-    .footer .grid-footer {
-        grid-template-columns: 1fr;
-        padding-left: 20px; 
-        padding-right: 20px;
-    }
-
-    .footer .grid-footer .footer-pages {
-        flex-direction: column;
-    }
-
-    .footer .grid-footer .footer-pages a {
-        margin-right: 0; 
-        margin-bottom: 10px; 
-    }
-
-    .footer .footer-divider {
-        margin-left: 20px; 
-        margin-right: 20px; 
-    }
-}
