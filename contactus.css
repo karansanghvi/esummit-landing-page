@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body
-{
+
+.container {
     min-height: 100vh;
     overflow-x: hidden;
-    /* background: #08313a; */
     background: linear-gradient(180deg, #0C313A 0%, #2187A0 100%);
 }
-header
-{
+
+header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 20px; /* Adjusted padding for mobile view */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +54,7 @@ header ul li a:hover , header ul li a.active
     color: #2b1055;
 }
 
-.events-title {
+.contact-title {
     font-family: 'Rounded Mplus 1c', sans-serif;
     font-size: 96px;
     font-weight: 500;
@@ -67,16 +66,60 @@ header ul li a:hover , header ul li a.active
     margin-top: 180px;
 }
 
-.events-container {
-    margin-left: 180px;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10;
+.contact-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
-.events-container .event-info {
+.contact-container .contact-info-one {
     background: hsla(192, 66%, 14%, 1);
     border-radius: 20px;
     padding: 20px;
     color: white;
+    flex: 0 0 calc(50% - 20px); 
+    margin-bottom: 20px; 
+}
+
+.contact-container .contact-info-two {
+    flex: 0 0 calc(50% - 20px); 
+    margin-bottom: 20px; 
+}
+
+
+.contact-container .contact-info-one a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.contact-container .contact-info-one i {
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contact-title {
+        font-size: 48px;
+        line-height: 72px;
+        padding-left: 0;
+        margin-top: 60px;
+    }
+
+    .contact-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px; 
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+    .contact-container .contact-info-one {
+        width: auto;
+        margin-right: 0;
+    }
 }

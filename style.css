@@ -110,16 +110,12 @@ section img#moon
     margin-top: 120px;
     margin-left: 230px;
 }
-.sec
-{
-    position: relative;
-    padding: 100px;
-    background: #08313a;
-    background-image: url('./SS\ \(12\)\ 1.png');
-    background-repeat: no-repeat;
-    background-position: 800px;
 
+.about-info, .theme-info {
+    margin-right: 80px;
+    text-align: justify;
 }
+
 .sec h2 
 {
     font-family: Rounded Mplus 1c;
@@ -142,7 +138,7 @@ section img#moon
     text-align: justify;
 }
 
-.footer {
+/* .footer {
     background: hsla(184, 82%, 31%, 1);
 }
 
@@ -188,3 +184,4 @@ section img#moon
     text-align: center;
     font-size: large;
 }
+ */
