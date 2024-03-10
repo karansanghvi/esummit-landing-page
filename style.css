@@ -153,8 +153,6 @@ section img#moon
     margin-top: 120px;
     margin-left: 230px;
 }
-<<<<<<< Updated upstream
-=======
 .sec
 {
     position: relative;
@@ -163,13 +161,8 @@ section img#moon
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 800px;
->>>>>>> Stashed changes
 
-.about-info, .theme-info {
-    margin-right: 80px;
-    text-align: justify;
 }
-
 .sec h2 
 {
     font-family: Rounded Mplus 1c;
@@ -189,7 +182,7 @@ section img#moon
     margin-bottom: 10vh;
 }
 
-/* .footer {
+.footer {
     background: hsla(184, 82%, 31%, 1);
 }
 
@@ -235,9 +228,6 @@ section img#moon
     text-align: center;
     font-size: large;
 }
-<<<<<<< Updated upstream
- */
-=======
 
 .rocket2{
     display: none;
@@ -605,4 +595,3 @@ section img#moon
         font-size: 3vw;
     }
 }
->>>>>>> Stashed changes
