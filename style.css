@@ -87,19 +87,62 @@ section img#moon
 {
     mix-blend-mode: screen;
 }
-.two_mountain {
-    margin-top: 100px;
-    margin-left: -200px;
+.textdiv {
+    position: relative;
+    z-index: 0;
+    color: rgb(234, 234, 234);
+    text-align: center;
+    margin-top: -15vh;
+}
+.textdiv h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 8vh;
+    line-height: 1;
+    text-shadow: 2px 2px 8px #000000;
+}
+.textdiv p{
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-style: italic;
+    text-shadow: 2px 2px 8px #000000;
+}
+.textdiv p2{
+    font-size: 2.5vh;
+    text-shadow: 2px 2px 8px #000000;
+}
+.stars{
+    overflow: visible;
+    z-index: -2;
+    display: block;
+    transform: scale(1.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+.stars2{
+    overflow: visible;
+    z-index: -2;
+    transform: scale(0.8);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .one_mountain {
-    margin-top: -80px;
-    object-fit: cover;
+    height: 40vh;
+    margin-top: 35vh;
+    z-index: -1;
 }
-.big_mountain {
-    object-fit: cover;
-    width: 100%;
-    margin-top: 220px;
-    height: 100%;
+.big_mountain { 
+    margin-top: 50vh;
+    height: 60vh;
+    z-index: 2;
+}
+.rocket{
+    height: fit-content;
+    transform: scale(0.07);
+    margin-top: -65vh;
+    margin-left: -35vw;
 }
 .rectangle {
     width: 1000px;
@@ -110,6 +153,17 @@ section img#moon
     margin-top: 120px;
     margin-left: 230px;
 }
+<<<<<<< Updated upstream
+=======
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #08313a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 800px;
+>>>>>>> Stashed changes
 
 .about-info, .theme-info {
     margin-right: 80px;
@@ -119,23 +173,20 @@ section img#moon
 .sec h2 
 {
     font-family: Rounded Mplus 1c;
-    font-size: 96px;
+    font-size: 6vh;
     font-weight: 500;
-    line-height: 143px;
     letter-spacing: 0em;
-    text-align: left;
+    line-height: 1.5;
     color: hsla(19, 59%, 78%, 1);
-    padding-left: 180px;
-
 }
 .sec p
 {
     font-family: Rounded Mplus 1c;
-    font-size: 20px;
+    font-size: 3vh;
+    line-height: 1.5;
     font-weight: 500;
     color: hsla(188, 59%, 91%, 1);
-    margin-left: 180px;
-    text-align: justify;
+    margin-bottom: 10vh;
 }
 
 /* .footer {
@@ -184,4 +235,374 @@ section img#moon
     text-align: center;
     font-size: large;
 }
+<<<<<<< Updated upstream
  */
+=======
+
+.rocket2{
+    display: none;
+}
+
+.big_mountain2{
+    display: none;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin-top: 5vh;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+
+.text-box{
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 3px 8px;
+}
+.text-box h2{
+    font-weight: 600;
+    line-height: 1;
+    color: #00313A;
+}
+
+.text-box small{
+    margin: 0;
+    display: inline-block;
+    color: #0E8991;
+    font-size: 2vh;
+}
+
+.text-box p{
+    color: #00313A;
+    font-weight: 1;
+    font-size: 3vh;
+}
+
+.topics{
+    display: flex;
+}
+
+.topics button{
+    margin-left: auto;
+    border-radius: 1vh;
+    padding: 1vh;
+    background-color: #E7BBA6;
+    border-width: 0.1vh;
+    font-size: 2vh;
+}
+
+.topics button:hover{
+    background-color: #de8860;
+}
+
+.left-container{
+    left: 0%;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 5;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -14.5px;
+}
+
+
+.outer
+{
+    height: fit-content; 
+    display: grid;
+}
+
+.card{
+    height: 50vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 40vh;
+    background-color: #03171c;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    color: rgb(215, 215, 215);
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-inner{
+    position: relative;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    height: 40vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(53, 53, 53);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-inner img{
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.row p{
+    padding: 0;
+    margin: 0;
+    padding: 1vh;
+    padding-bottom: 0;
+    font-size: 3vh;
+}
+
+.row small{
+    font-size: 2vh;
+    padding: 0;
+    margin: 0;
+    padding: 1vh;
+    padding-top: 0;
+}
+
+.sponsor-inner{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sponsor-inner img{
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
+@media (max-width: 1024px) {
+    .one_mountain {
+        display: none;
+    }
+    .big_mountain{
+        display: none;
+    }
+    .big_mountain2 { 
+        overflow: visible;
+        display: block;
+        margin-top: 60vh;
+        height: 45vh;
+        z-index: 2;
+    }
+    .textdiv{
+        margin-top: -5vw;
+    }
+    .rocket{
+        display: none;
+    }
+    .rocket2{
+        display: block;
+        height: fit-content;
+        margin-top: 40vh;
+        transform: scale(0.1);
+    }
+    .textdiv h1{
+        font-size: 10vw;
+    }
+    .textdiv p{
+        font-size: 6vw;
+    }
+    .textdiv p2{
+        font-size: 5vw;
+    }
+    
+    .text-box small{
+        margin: 0;
+        display: inline-block;
+        color: #0E8991;
+        margin-bottom: 15px;
+        font-size: 3vw;
+    }
+
+    .text-box p{
+        color: #00313A;
+        font-weight: 1;
+        font-size: 6vw;
+    }
+
+    .sec h2 
+    {
+        font-size: 6vw;
+    }
+    .sec p
+    {
+        font-size: 3vw;
+    }
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container img, .right-container img{
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -15px;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    .row p{
+        padding: 0;
+        margin: 0;
+        padding: 1vh;
+        padding-bottom: 0;
+        font-size: 5vw;
+    }
+
+    .row small{
+        font-size: 4vw;
+        padding: 0;
+        margin: 0;
+        padding: 1vh;
+        padding-top: 0;
+    }
+
+    .sponsor-inner img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .sponsor-inner p{
+        font-size: 2vh;
+    }
+    
+    .topics button{
+        font-size: 3vw;
+    }
+}
+>>>>>>> Stashed changes
