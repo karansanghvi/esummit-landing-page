@@ -11,7 +11,6 @@ body
 {
     min-height: 100vh;
     overflow-x: hidden;
-    /* background: #08313a; */
     background: linear-gradient(180deg, #0C313A 0%, #2187A0 100%);
 }
 header
@@ -28,8 +27,8 @@ header
 }
 header .logo
 {
-    width: 68px;
-    height: 68px;
+    width: 120px;
+    height: 120px;
 }
 header ul
 {
@@ -66,21 +65,15 @@ header ul li a:hover , header ul li a.active
     margin-left: 180px;
 }
 
-.events-container {
-    margin-left: 180px;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-}
-
-.events-container .event-info {
+.grid-container .event-info {
     background: hsla(192, 66%, 14%, 1);
     border-radius: 20px;
     padding: 20px;
     color: white;
+    margin-left: 180px;
 }
 
-.events-container .event-info-two {
+.grid-container .event-info-two {
     background: hsla(192, 66%, 14%, 1);
     border-radius: 20px;
     padding: 20px;
@@ -104,23 +97,34 @@ p {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-    .events-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px; /* Adjust the margin for better spacing */
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+  }
 
-    .events-container .event-info,
-    .events-container .event-info-two {
-        margin-right: 0;
-        margin-bottom: 20px; /* Adjust the margin for better spacing */
-    }
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
 
+  @media (max-width: 1024px) {
+    header .logo {
+        width: 200px;
+        height: 200px;
+    }
+    header ul li a {
+        font-size: 90px;
+    }
     .events-title {
-        padding-left: 20px;
-        margin-top: 20px;
-        font-size: 36px;
-        text-align: center; 
+        font-size: 8vh;
     }
-}
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+    .event-info {
+        margin-left: -80px;
+    }
+  }
