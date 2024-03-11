@@ -110,6 +110,54 @@ p {
     text-align: center;
   }
 
+  .footer {
+    background: hsla(184, 82%, 31%, 1);
+    margin-top: 300px;
+}
+
+.footer .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+.footer .grid-footer .logo2 {
+    width: 70px;
+    height: 70px;
+}
+
+.footer .grid-footer .footer-pages {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .grid-footer .footer-pages a {
+    margin-right: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .footer-divider {
+    margin-left: 150px;
+    margin-right: 160px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.footer .footer-copyright {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
   @media (max-width: 1024px) {
     header .logo {
         width: 200px;
