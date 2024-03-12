@@ -83,3 +83,26 @@ option {
     border-radius: 15px;
     font-weight: 500;
 }
+
+@media (max-width: 1024px) {
+    .form-title {
+        font-size: 4vh;
+    }
+
+    form label {
+        margin-left: -400px;
+        font-size: 20px;
+    }
+    form input {
+        margin-left: -400px;
+        width: 300px;
+    }
+    select {
+        margin-left: -400px;
+        width: 300px;
+    }
+    .register {
+        margin-left: -350px;
+        width: 200px;
+    }
+}
