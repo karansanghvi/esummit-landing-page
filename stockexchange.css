@@ -65,6 +65,11 @@ header ul li a:hover , header ul li a.active
     margin-left: 180px;
 }
 
+i {
+    margin-left: 180px;
+    color: white;
+}
+
 .caption {
     font-family: Rounded Mplus 1c;
     font-size: 4vh;
