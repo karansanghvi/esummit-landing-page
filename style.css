@@ -486,6 +486,12 @@ section img#moon
     margin: 0;
 }
 
+.row .sponsor {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 .row p{
     padding: 0;
@@ -510,16 +516,6 @@ section img#moon
     justify-content: center;
     align-items: center;
 }
-
-
-.sponsor-inner img{
-    border-radius: 50%;
-    height: 20vh;
-    width: 20vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-
 
 @media (max-width: 1024px) {
     .one_mountain {

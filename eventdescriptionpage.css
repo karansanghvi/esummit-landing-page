@@ -77,7 +77,6 @@ header ul li a:hover , header ul li a.active
 .explanation {
     font-family: Rounded Mplus 1c;
     font-size: 3vh;
-    /* font-weight: 500; */
     color: hsla(188, 59%, 91%, 1);
     margin-bottom: 5vh;
     margin-left: 180px;
@@ -91,14 +90,36 @@ ol {
     margin-bottom: 5vh;
 }
 
+p {
+    margin-left: 180px;
+    color: white;
+    font-size: 3vh;
+}
+
+p .judge-title {
+    margin-left: 180px;
+    color: white;
+    font-size: 3vh;
+    font-weight: 200;
+}
+
 .points {
     font-family: Rounded Mplus 1c;
     font-size: 3vh;
-    /* font-weight: 500; */
     color: hsla(188, 59%, 91%, 1);
     margin-left: 220px;
     text-align: justify;
     margin-right: 180px;
+}
+
+.smallpoints {
+    font-family: Rounded Mplus 1c;
+    font-size: 3vh;
+    color: hsla(188, 59%, 91%, 1);
+    margin-left: 250px;
+    text-align: justify;
+    margin-right: 180px;
+    list-style-type: disc;
 }
 
 .register {
@@ -176,7 +197,13 @@ ol {
         font-size: 1vh;
         margin-left: 180px;
     }
+    p {
+        font-size: 1vh;
+    }
     .points {
+        font-size: 1vh;
+    }
+    .smallpoints {
         font-size: 1vh;
     }
     .register {

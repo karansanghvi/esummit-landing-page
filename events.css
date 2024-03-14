@@ -80,6 +80,12 @@ header ul li a:hover , header ul li a.active
     margin-right: 180px;
 }
 
+.grid-container .event-info img, 
+.grid-container .event-info-two img {
+    width: 600px;
+    height: 180px;
+}
+
 h1 {
     font-size: 30px;
 }
@@ -169,9 +175,14 @@ p {
         font-size: 8vh;
     }
     .grid-container {
-      grid-template-columns: 1fr; 
+      grid-template-columns: 1fr;
     }
     .event-info {
         margin-left: -80px;
     }
-  }
+    .grid-container .event-info img, 
+    .grid-container .event-info-two img {
+        width: 1400px;
+        height: 340px;
+    }
+}
