@@ -245,6 +245,38 @@
           </div>
       </div>
   </div>
+
+  <h2 style = "margin-top: 10vh;">Frequently Asked Questions</h2>
+
+  <button class="accordian">What is E-Summit?</button>
+  <div class="panel">
+    E-Summit being the flagship event of our E-Cell, is held annually brings together the academic community, venture capitalists, new age entrepreneurs and all those passionate about entrepreneurship to common grounds. It provides an avenue to exhibit the entrepreneurial talent and creativity through many events like business ventures, product design competition, and social entrepreneurial idea competition.
+  </div>
+  <button class="accordian">Who can be a part of E-Summit?</button>
+  <div class="panel">
+    All undergrads can participate in the Summit.
+  </div>
+  <button class="accordian">Is there any registration fees for any event of E-Summit?</button>
+  <div class="panel">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, mauris eget vulputate ullamcorper, diam quam pellentesque neque, sed posuere tortor orci non sem. Donec in euismod risus. Proin condimentum nibh augue, sed luctus nisl ultricies et. Aliquam fermentum quis nisl nec placerat. Donec tempus mi nec erat rutrum pretium. Praesent vitae porta turpis, lobortis molestie nibh. Duis ac tortor nisl. Quisque mollis rhoncus quam ut faucibus. Nam vel varius tellus. Cras mollis venenatis porttitor.
+  </div>
+  <button class="accordian">Is there a limit on number of events one can participate in?</button>
+  <div class="panel">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, mauris eget vulputate ullamcorper, diam quam pellentesque neque, sed posuere tortor orci non sem. Donec in euismod risus. Proin condimentum nibh augue, sed luctus nisl ultricies et. Aliquam fermentum quis nisl nec placerat. Donec tempus mi nec erat rutrum pretium. Praesent vitae porta turpis, lobortis molestie nibh. Duis ac tortor nisl. Quisque mollis rhoncus quam ut faucibus. Nam vel varius tellus. Cras mollis venenatis porttitor.
+  </div>
+  <button class="accordian">Should all team members be of the same college for any event?</button>
+  <div class="panel">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, mauris eget vulputate ullamcorper, diam quam pellentesque neque, sed posuere tortor orci non sem. Donec in euismod risus. Proin condimentum nibh augue, sed luctus nisl ultricies et. Aliquam fermentum quis nisl nec placerat. Donec tempus mi nec erat rutrum pretium. Praesent vitae porta turpis, lobortis molestie nibh. Duis ac tortor nisl. Quisque mollis rhoncus quam ut faucibus. Nam vel varius tellus. Cras mollis venenatis porttitor.
+  </div>
+  <button class="accordian">On what platforms will the event be held on?</button>
+  <div class="panel">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, mauris eget vulputate ullamcorper, diam quam pellentesque neque, sed posuere tortor orci non sem. Donec in euismod risus. Proin condimentum nibh augue, sed luctus nisl ultricies et. Aliquam fermentum quis nisl nec placerat. Donec tempus mi nec erat rutrum pretium. Praesent vitae porta turpis, lobortis molestie nibh. Duis ac tortor nisl. Quisque mollis rhoncus quam ut faucibus. Nam vel varius tellus. Cras mollis venenatis porttitor.
+  </div>
+  <button class="accordian">Will be events be held in offline or online mode?</button>
+  <div class="panel">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet, mauris eget vulputate ullamcorper, diam quam pellentesque neque, sed posuere tortor orci non sem. Donec in euismod risus. Proin condimentum nibh augue, sed luctus nisl ultricies et. Aliquam fermentum quis nisl nec placerat. Donec tempus mi nec erat rutrum pretium. Praesent vitae porta turpis, lobortis molestie nibh. Duis ac tortor nisl. Quisque mollis rhoncus quam ut faucibus. Nam vel varius tellus. Cras mollis venenatis porttitor.
+  </div>
+
     </div>
     <div class="footer">
       <div class="grid-footer">
@@ -252,7 +284,7 @@
           <img src="./black_logo_esummit.png" alt="" class="logo2">
         </div>
         <div class="footer-pages">
-          <a href="./index.html" class="active">Home</a>
+          <a href="./index.html">Home</a>
           <a href="./events.html">Our Events</a>
         </div>
       </div>
@@ -293,6 +325,23 @@
         text.style.right = value * 4 + "px"; 
         header.style.top = value * 0.5 + "px";
       });
+
+      // accordian
+      var acc = document.getElementsByClassName("accordian");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+
     </script>
   </body>
 </html>

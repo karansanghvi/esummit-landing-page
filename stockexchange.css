@@ -65,14 +65,9 @@ header ul li a:hover , header ul li a.active
     margin-left: 180px;
 }
 
-i {
-    margin-left: 180px;
-    color: white;
-}
-
 .caption {
     font-family: Rounded Mplus 1c;
-    font-size: 4vh;
+    font-size: 5vh;
     line-height: 1.5;
     font-weight: 700;
     color: hsla(188, 59%, 91%, 1);
@@ -101,7 +96,7 @@ ol {
     font-size: 3vh;
     /* font-weight: 500; */
     color: hsla(188, 59%, 91%, 1);
-    margin-left: 200px;
+    margin-left: 220px;
     text-align: justify;
     margin-right: 180px;
 }
@@ -120,6 +115,55 @@ ol {
     margin-right: 500px;
     font-size: 30px;
 }
+
+.footer {
+    background: hsla(184, 82%, 31%, 1);
+    margin-top: 300px;
+}
+
+.footer .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+.footer .grid-footer .logo2 {
+    width: 70px;
+    height: 70px;
+}
+
+.footer .grid-footer .footer-pages {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .grid-footer .footer-pages a {
+    margin-right: 20px;
+    font-size: large;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .footer-divider {
+    margin-left: 150px;
+    margin-right: 160px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.footer .footer-copyright {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
 
 @media (max-width: 1024px) {
     .events-title {
