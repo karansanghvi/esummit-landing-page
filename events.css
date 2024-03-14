@@ -56,13 +56,12 @@ header ul li a:hover , header ul li a.active
 
 .events-title {
     font-family: Rounded Mplus 1c;
-    font-size: 10vh;
-    font-weight: 500;
-    letter-spacing: 0em;
+    font-size: 12vh;
+    font-weight: 700;
     line-height: 1.5;
     color: hsla(19, 59%, 78%, 1);
     margin-top: 180px;
-    margin-left: 180px;
+    margin-left: 140px;
 }
 
 .grid-container .event-info {
@@ -70,7 +69,7 @@ header ul li a:hover , header ul li a.active
     border-radius: 20px;
     padding: 20px;
     color: white;
-    margin-left: 180px;
+    margin-left: 120px;
 }
 
 .grid-container .event-info-two {

@@ -40,27 +40,27 @@ form label {
 }
 
 form input {
-    background-color: #2187A0;
+    background-color: white;
     width: 600px;
     height: 60px;
-    border-color: #2187A0;
+    border-color: white;
     border-radius: 15px;
 }
 
 form input::placeholder {
-    color:white;
+    color: black;
     font-weight: 400;
     padding-left: 20px;
     font-size: 15px;
 }
 
 select {
-    background-color: #2187A0;
+    background-color: white;
     width: 600px;
     height: 60px;
-    border-color: #2187A0;
+    border-color: white;
     border-radius: 15px;
-    color: white; 
+    color: black; 
 }
 
 option {
