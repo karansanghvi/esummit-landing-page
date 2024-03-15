@@ -223,6 +223,7 @@ section img#moon
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .footer {
