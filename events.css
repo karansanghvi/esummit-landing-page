@@ -64,7 +64,8 @@ header ul li a:hover , header ul li a.active
     margin-left: 140px;
 }
 
-.grid-container .event-info {
+.grid-container .event-info,
+.grid-container-two .event-info {
     background: hsla(192, 66%, 14%, 1);
     border-radius: 20px;
     padding: 20px;
@@ -79,7 +80,8 @@ header ul li a:hover , header ul li a.active
 }
 
 .grid-container .event-info img, 
-.grid-container .event-info-two img {
+.grid-container .event-info-two img,
+.grid-container-two .event-info img {
     width: 600px;
     height: 180px;
 }
@@ -103,6 +105,13 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+  }
+
+  .grid-container-two {
+    display: grid;
+    grid-template-columns: 1fr; 
     gap: 20px; 
     padding: 20px;
   }
@@ -178,6 +187,10 @@ p {
     .grid-item {
         margin-left: 60px;
         margin-right: 20px;
+    }
+    .grid-item-two {
+        margin-left: 60px;
+        width: 1450px;
     }
     .event-info {
         margin-left: 10px;
