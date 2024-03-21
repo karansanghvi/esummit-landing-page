@@ -168,15 +168,13 @@ section img#moon
     font-family: Rounded Mplus 1c;
     font-size: 8vh;
     font-weight: 500;
-    letter-spacing: 0em;
-    line-height: 1.5;
     color: hsla(19, 59%, 78%, 1);
 }
 .sec p
 {
     font-family: Rounded Mplus 1c;
     font-size: 3vh;
-    line-height: 1.5;
+    text-align: justify;
     font-weight: 500;
     color: hsla(188, 59%, 91%, 1);
     margin-bottom: 10vh;
@@ -358,6 +356,10 @@ section img#moon
     display: flex;
 }
 
+.topics h2 {
+    font-size: 4vh;
+}
+
 .topics button{
     margin-left: auto;
     border-radius: 1vh;
@@ -366,6 +368,7 @@ section img#moon
     border-width: 0.1vh;
     font-size: 2vh;
 }
+
 
 .topics button:hover{
     background-color: #de8860;
@@ -582,6 +585,7 @@ section img#moon
     .sec p
     {
         font-size: 3vw;
+        text-align: justify;
     }
     .timeline{
         margin: 50px auto;
@@ -618,7 +622,7 @@ section img#moon
         margin-top: 5vh;
     }
     .card-inner img {
-        width: 750px;
+        width: 820px;
         height: 850px;
     }
     .row p{

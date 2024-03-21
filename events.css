@@ -64,33 +64,30 @@ header ul li a:hover , header ul li a.active
     margin-left: 140px;
 }
 
-.grid-container .event-info,
-.grid-container-two .event-info {
-    background: hsla(192, 66%, 14%, 1);
-    border-radius: 20px;
-    padding: 20px;
-    color: white;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-.grid-container .event-info-two {
+.grid-container > div {
     background: hsla(192, 66%, 14%, 1);
-    border-radius: 20px;
-    padding: 20px;
     color: white;
+    margin-left: 80px;
+    margin-right: 40px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.grid-container .event-info img, 
-.grid-container .event-info-two img,
-.grid-container-two .event-info img {
+.grid-container > div img {
     width: 600px;
-    height: 180px;
+    height: 220px;
 }
 
-h1 {
+.grid-container > div h1 {
     font-size: 30px;
 }
 
-p {
+.grid-container > div p {
     text-align: justify;
 }
 
@@ -102,27 +99,8 @@ p {
     border-radius: 5px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
-    padding: 20px;
-  }
 
-  .grid-container-two {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px; 
-    padding: 20px;
-  }
-
-  .grid-item {
-    /* border: 1px solid #ccc; */
-    padding: 20px;
-    text-align: center;
-  }
-
-  .footer {
+.footer {
     background: hsla(184, 82%, 31%, 1);
     margin-top: 300px;
 }
@@ -182,23 +160,14 @@ p {
         font-size: 8vh;
     }
     .grid-container {
-      grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
-    .grid-item {
-        margin-left: 60px;
-        margin-right: 20px;
+    .grid-container > div {
+        margin-bottom: 20px;
     }
-    .grid-item-two {
-        margin-left: 60px;
-        width: 1450px;
+    .grid-container > div img {
+        width: 820px;
+        height: 220px;
     }
-    .event-info {
-        margin-left: 10px;
-        /* margin-right: 40px; */
-    }
-    .grid-container .event-info img, 
-    .grid-container .event-info-two img {
-        width: 1400px;
-        height: 340px;
-    }
+    
 }

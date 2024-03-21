@@ -122,6 +122,15 @@ p .judge-title {
     list-style-type: disc;
 }
 
+.probllem {
+    margin-left: 180px;
+    text-decoration: none;
+    background-color: #0C313A;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .register {
     background-color: #0C313A;
     text-decoration: none;
