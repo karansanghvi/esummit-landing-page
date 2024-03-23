@@ -61,48 +61,78 @@ header ul li a:hover , header ul li a.active
     line-height: 1.5;
     color: hsla(19, 59%, 78%, 1);
     margin-top: 180px;
-    margin-left: 140px;
+    margin-left: 5%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-cards p{
+    height: 20vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.grid-cards p::-webkit-scrollbar {
+    border-radius: 0.5vh;
+    width: 0.5vw;
+}
+
+.grid-cards p::-webkit-scrollbar-thumb {
+    background-color: hsla(19, 59%, 78%, 1);
+    border-radius: 0.5vh;
+}
+
+.grid-cards{
+    height: 75vh;
+    margin-top: 5vh !important;
+    overflow: hidden;
+}
+
+.grid-cards img{
+    height: 27vh;
+    width: 100%;
+    background-image: url('./Case Quest Website Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .grid-container > div {
     background: hsla(192, 66%, 14%, 1);
     color: white;
-    margin-left: 80px;
-    margin-right: 40px;
+    width: 90%;
     padding: 20px;
     border-radius: 20px;
-}
-
-.grid-container > div img {
-    width: 600px;
-    height: 220px;
+    margin: auto;
 }
 
 .grid-container > div h1 {
-    font-size: 30px;
+    font-size: 5vh;
 }
 
-.grid-container > div p {
-    text-align: justify;
+.grid-cards p{
+    font-size: 2.5vh;
 }
 
 .viewmore {
     background-color: #2187A0;
     text-decoration: none;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 1vh;
+    border-radius: 0.5vh;
 }
 
+.redirect{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
 
 .footer {
     background: hsla(184, 82%, 31%, 1);
-    margin-top: 300px;
+    margin-top: 10vh;
 }
 
 .footer .grid-footer {
@@ -148,26 +178,57 @@ header ul li a:hover , header ul li a.active
     font-size: large;
 }
 
-  @media (max-width: 1024px) {
-    header .logo {
-        width: 200px;
-        height: 200px;
-    }
-    header ul li a {
-        font-size: 40px;
-    }
-    .events-title {
-        font-size: 8vh;
-    }
-    .grid-container {
-        grid-template-columns: auto;
-    }
-    .grid-container > div {
-        margin-bottom: 20px;
-    }
-    .grid-container > div img {
-        width: 820px;
-        height: 220px;
-    }
+@media (max-width: 1024px) {
     
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-cards{
+    height: 50vh;
+    margin-top: 5vh;
+}
+
+.grid-cards img{
+    height: 15vh;
+    width: 100%;
+    background-image: url('./Case Quest Website Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-container > div {
+    background: hsla(192, 66%, 14%, 1);
+    color: white;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.grid-cards p{
+    font-size: 2vh;
+}
+
+.grid-container > div h1 {
+    font-size: 3.5vh;
+}
+
+.grid-cards p{
+    height: 18vh;
+}
+
+.redirect{
+    margin-top: 3vh;
+}
+
+.viewmore{
+    font-size: 2vh;
+}
+
+.events-title {
+    font-size: 8vh;
+}
+
 }
